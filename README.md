@@ -21,10 +21,10 @@ A Typesetter section (content) type for embedding Google Maps.
 [Demo site](http://ts-addons.my-sitelab.com/Marker_Google_Maps) (currently down)
 
 ## Change Log
-1.0.8 - Some refactoring/code reformatting/fixes by mahotilo and juek
-1.0.7 - Added support for unlimited maps with new section type. Removed Special page.  
-1.0.6 - Added usage of the Google Maps APIs key.
-1.0.5 - Added support for multiple markers on a single map: Left click on map to set marker, right click on marker to remove it. Markers are draggable. Left click on marker to edit info window. Info window accepts html markup.
-1.0.4 - Options added: Fullscreen button, Disable drag  
-1.0.3 - Minor bug fix
-1.0.2 - Options added: Responsive map display, Custom marker image, Custom color scheme/map style
+* 1.0.8 - Some refactoring/code reformatting/fixes by mahotilo and juek
+* 1.0.7 - Added support for unlimited maps with new section type. Removed Special page.  
+* 1.0.6 - Added usage of the Google Maps APIs key.
+* 1.0.5 - Added support for multiple markers on a single map: Left click on map to set marker, right click on marker to remove it. Markers are draggable. Left click on marker to edit info window. Info window accepts html markup.
+* 1.0.4 - Options added: Fullscreen button, Disable drag  
+* 1.0.3 - Minor bug fix
+* 1.0.2 - Options added: Responsive map display, Custom marker image, Custom color scheme/map style
