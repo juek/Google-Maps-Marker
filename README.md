@@ -6,7 +6,7 @@ A Typesetter section (content) type for embedding Google Maps.
 ## Features
 * Multiple maps per page
 * Multiple markers per map
-* Resonsive os fixed section sizes
+* Responsive or fixed section sizes
 * Custom marker icon
 * Custom map style (JSON)
 
