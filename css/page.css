@@ -1,0 +1,53 @@
+/*
+Google Maps Marker - plugin for Typesetter CMS 
+Author: a2exfr
+http://my-sitelab.com/
+Date: 2018-07-27
+Version 1.0.8 
+*/
+
+.mapCanvas {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.map-container {
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+}
+
+.btn-full-screen {
+  position:absolute;
+  right:0;
+  margin-top:10px;
+  margin-right:10px;
+  background-color:white; 
+  padding:5px;
+  cursor:pointer;
+  text-align:right;
+  z-index:9998;
+}
+
+#btn-exit-full-screen {
+  display:none;
+}
+
+/* responsive */
+.r_map {
+  position:relative;
+  width:100%;
+  /* padding-bottom:56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+  /* height:0!important; */
+  overflow:hidden!important;
+}
+
+.r_map iframe,   
+.r_map object,  
+.r_map embed {
+  position:absolute!important;
+  top:0!important;
+  left:0!important;
+  width:100%!important;
+  height:100%!important;
+}

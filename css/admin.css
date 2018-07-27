@@ -1,0 +1,15 @@
+/*
+Google Maps Marker - plugin for Typesetter CMS 
+Author: a2exfr
+http://my-sitelab.com/
+Date: 2018-07-27
+Version 1.0.8 
+*/
+
+.info_panel {
+  margin-top:2em;
+  border:1px solid #ccc;
+  background:#fafafa;
+  border-radius:3px;
+  padding:12px;
+}

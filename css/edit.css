@@ -1,0 +1,237 @@
+/*
+Google Maps Marker - plugin for Typesetter CMS 
+Author: a2exfr
+http://my-sitelab.com/
+Date: 2018-07-27
+Version 1.0.8 
+*/
+
+#ckeditor_controls {
+  box-sizing:content-box;
+}
+#ckeditor_controls input {
+  box-sizing:border-box;
+}
+
+/* The switch - the box around the slider */
+#ckeditor_controls .switch{
+  position:relative;
+  top:3px;
+  display:inline-block;
+  width:40px;
+  height:20px;
+}
+
+/* Hide default HTML checkbox */
+#ckeditor_controls .switch input{
+  display:none;
+}
+
+/* The slider */
+#ckeditor_controls .slider{
+  position:absolute;
+  cursor:pointer;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#ccc;
+  -webkit-transition:all 0.4s;
+  transition:all 0.4s;
+}
+
+#ckeditor_controls .slider:before{
+  position:absolute;
+  content:"";
+  height:15px;
+  width:15px;
+  left:2px;
+  bottom:3px;
+  background-color:white;
+  -webkit-transition:all 0.4s;
+  transition:all .4s;
+}
+
+#ckeditor_controls input:checked + .slider{
+  background-color:#18BC9C;
+}
+
+#ckeditor_controls input:focus + .slider{
+  box-shadow:0 0 1px #18BC9C;
+}
+
+#ckeditor_controls input:checked + .slider:before{
+  -webkit-transform:translateX(20px);
+  -ms-transform:translateX(20px);
+  transform:translateX(20px);
+}
+
+/* rounded sliders */
+#ckeditor_controls .slider.round{
+  border-radius:34px;
+}
+
+#ckeditor_controls .slider.round:before{
+  border-radius:50%;
+}
+
+/* inputs */
+#ckeditor_controls .a_inp{
+  padding:6px;
+  border:none;
+  border-bottom:2px solid #ccc;
+  -webkit-transition:border 0.3s;
+  -ms-transition:border 0.3s;
+  transition:border 0.3s;
+}
+
+#ckeditor_controls .a_inp:focus{
+  border-bottom:2px solid #18BC9C;
+}
+
+#ckeditor_controls .a_flat_button{
+  font-size:15px!important;
+  height:18px;
+  margin-bottom:5px;
+  border-radius:6px;
+  color:#fff;
+  background-color:#1abc9c;
+  text-shadow:-1px 1px #417cb8;
+  border:none;
+  padding:3px 5px;
+  border-bottom:2px solid #12ab8d;
+}
+
+#ckeditor_controls .a_flat_button:hover{
+  background-color:#12ab8d;
+  text-shadow:-1px 1px #27496d;
+}
+
+#ckeditor_controls .a_flat_button:active{
+  background-color:#16a085;
+  text-shadow:-1px 1px #193047;
+  height:16px;
+}
+
+#ckeditor_controls #option_message p{
+  margin-top:5px!important; 
+  margin-bottom:5px!important;
+}
+
+#ckeditor_controls .a_line {
+  display:inline-block;
+}
+
+#ckeditor_controls .a_line .switch{
+  float:left;
+  margin-bottom:0; 
+}
+
+#ckeditor_controls .a_line .switch .slider .round{
+  display:inline-block;
+  vertical-align:middle;
+}
+
+#ckeditor_controls .a_line p{
+  margin-left:5px!important;
+  margin-top:5px!important; 
+  margin-bottom:5px!important;
+  display:inline-block;
+  vertical-align:middle;
+  position:relative;
+}
+
+#ckeditor_controls .a_box{
+  border:1px solid #ddd;
+  padding:3px;
+  border-radius:4px; 
+  margin-bottom:3px;
+  position:relative;
+}
+
+#ckeditor_controls .a_box input[type="text"],
+#ckeditor_controls .a_box input[type="number"]{
+  display:block;
+  width:100%;
+}
+
+#ckeditor_controls .a_box p{
+  margin-top:5px!important;
+  margin-bottom:5px!important;
+  position:relative;
+}
+
+/* three pos */
+#ckeditor_controls .switch-field{
+  overflow:hidden;
+}
+
+#ckeditor_controls .switch-title{
+  margin-bottom:6px;
+}
+
+#ckeditor_controls .switch-field input{
+  display:none;
+}
+
+#ckeditor_controls .switch-field label{
+  float:left;
+}
+
+#ckeditor_controls .switch-field label{
+  display:inline-block;
+  width:55px;
+  background-color:#e4e4e4;
+  color:rgba(0,0,0,0.6);
+  font-size:15px!important;
+  font-weight:normal;
+  text-align:center;
+  text-shadow:none;
+  padding:3px 14px;
+  border:1px solid rgba(0,0,0,0.2);
+  /*
+  -webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1); 
+  */
+  -webkit-transition:all 0.1s ease-in-out;
+  -moz-transition:all 0.1s ease-in-out;
+  -ms-transition:all 0.1s ease-in-out;
+  transition:all 0.1s ease-in-out;
+  margin-bottom:0;
+}
+
+#ckeditor_controls .switch-field label:hover{
+  cursor:pointer;
+}
+
+#ckeditor_controls .switch-field input:checked + label{
+  background-color:#1abc9c;
+  color:white;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+
+#ckeditor_controls .switch-field label:first-of-type{
+  border-radius:4px 0 0 0;
+}
+
+#ckeditor_controls .switch-field label:nth-of-type(2){
+  border-radius:0 4px 0 0;
+}
+
+#ckeditor_controls .switch-field label:nth-of-type(3){
+  border-radius:0 0 0 4px;
+}
+
+#ckeditor_controls .switch-field label:last-of-type{
+border-radius:0 0 4px 0;
+}
+
+#ckeditor_controls #stl{
+  float:left;
+  margin-right:3px;
+}
+
+#ckeditor_controls .stl{
+  font-size:10px!important;
+}
